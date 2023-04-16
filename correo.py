@@ -9,8 +9,10 @@ def correo_valido(correo):
 def main():
     correo = input("Correo: ")
     if correo_valido(correo):
-        print("Correo valido")
+        print("Este es su correo, tiene acceso a la app")
     else:
-        print("Correo invalido")
+        print("No es valido, intetelo otra vez. recuerda que tiene que tener un formato asi: t@t.t º")
+        return main() 
+print(main())
 
 
