@@ -6,5 +6,11 @@ def correo_valido(correo):
         return True
     else:
         return False
+def main():
+    correo = input("Correo: ")
+    if correo_valido(correo):
+        print("Correo valido")
+    else:
+        print("Correo invalido")
 
 
